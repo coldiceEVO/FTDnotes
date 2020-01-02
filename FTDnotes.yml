@@ -25,9 +25,9 @@ Steam Engine:
         m=x*(17.69x+10.631)
 Electric Engine:
     Power:  
-        2000E=80P
-        0.04    P/E
-        25      E/P
+        10000E=40P
+        0.004    P/E
+        250      E/P
 ECM:
     Strength:   
         power*2000/(2000+distance）
