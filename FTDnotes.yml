@@ -1,0 +1,72 @@
+#   CTRL+F  WIP to see whats necessary
+Stealth:
+    #visibility per cell
+    wood:
+    visible:
+    #time
+        29.61   0
+        30      6
+        44.74   12  <<<
+    #weather[0-good,1-stormy]
+        [1, 0.2]
+    radar:
+        1.65    0.3
+        4.5     0.8
+    sonar:
+        3       0.3
+        8       0.8
+Battery:
+    10000E      #2000E/cell
+    40P/S
+Detection:
+    max range: 10%
+Steam Engine:
+    mat rate:
+        m=x*(17.69x+10.631)
+Electric Engine:
+    Power:  
+        2000E=80P
+        0.04    P/E
+        25      E/P
+ECM:
+    Strength:   
+        power*2000/(2000+distance）
+    Sensor Accuracy: #mul
+        1.0-0.9(x/20k)^0.25
+PAC:
+    WIP：
+        ? what damage
+        
+    @ max damage,10s
+    Damage Curve:   #A:attenuation, r=range
+        a*e^(a*r/1000)
+        e^(r/1000): 
+            90% 105m
+            80% 223
+            70% 356
+            60% 510
+            50% 693
+            40% 916
+            30% 1204
+    Energy per shot: #N components
+        500N    #input
+        100N    #dangerous
+        200N    #U-return
+        *OC^2
+    Damage per shot:
+        4000N   #input
+        2000N   #U-return
+        *OC
+    Damage/Energy:
+        8       #input
+        /OC
+Shield:
+    heat-WIP
+    Setting:    #S: shield Strength
+    POWER:      # per 100 m^2
+        0.5(S)2
+    Recover:
+        0.015+0.025S
+    Chance of reflect:
+        (S-1)10/3+10    % @0deg,    /2@90deg
+    
