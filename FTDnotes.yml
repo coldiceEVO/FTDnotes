@@ -1,4 +1,64 @@
 #   CTRL+F  WIP to see whats necessary
+Mobility:
+    Warp:
+    ###WIP
+        variables:
+            build:
+                warp rod length:
+                    calculate coverage percentage.
+                    below 1 have panelty 
+                        #WIP
+                    can't be above 1, or 100%
+                charger length(m):
+                    longer: warp faster distance
+                        more power consumption/sec
+                        more power consumption/distance
+            effect:
+                time:
+                    charging
+                    cool-down:  5s
+                distance:
+                    = time*charger length
+                charge/sec:
+                    = 50* charger^0.2 * distance^0.8
+            Synth:
+                total-charge:
+                    # assume no cheese involved
+                    = 50* charger^0.2 /1.8*distance^1.8
+                    = 50* charger^0.2 /1.8*(time*charger)^1.8
+                    = 50* charger^2 /1.8* (time)1.8
+                    cheese:
+                        charge without charger, only attach charger right before warp for minimal charge expenditure.
+                        drawback:
+                            manual build, 
+                distance/charge:
+                distance/second:
+    purpose: 
+        instant single position change (!continuous
+        challenger: normal propulsion system
+        direction:
+            sideway:
+                Dodging Projectiles
+                Outmove Missiles
+                Hinder Detection
+            front: 
+                closing in on targe: bomer, melee
+            back:
+                retreat
+ 
+                    
+        Position:
+            Altitude:
+            SPACE:
+            in/out water:
+                AI detection, targeting & priority, projectiles, missiles, 
+            Inside enemy craft:
+                melee/bomb/terror drone
+            Underterrain:
+                cheese: one way barrier
+        testing:
+            battery drain: not good, not constant, stop when used up
+            - PAC is better
 Stealth:
     #visibility per cell
     wood:
